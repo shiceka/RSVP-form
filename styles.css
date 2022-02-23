@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 body {
-    background: url("https://www.google.com/url?sa=i&url=http%3A%2F%2Fm.gettywallpapers.com%2Fbeautiful-wallpapers%2F&psig=AOvVaw2UcztEtsHWLuebOMwULkkO&ust=1645625130635000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjewPS9k_YCFQAAAAAdAAAAABAD");
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-image: url(./assests/wedding-g54fad0d9a_1920.jpg);
+    background-size: cover;
 }
+/* .myvideo {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+.vid-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
+} */
+#invitation-form {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: darkcyan;
+    padding: 20px;
+    margin: 15px;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    background-image: url(./assests/flower-g838cace99_1920.png);
+    background-size: cover;
+}
+.heading {
+    color: cadetblue;
+    text-align: center;
+    font-family: redressed;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+

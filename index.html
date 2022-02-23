@@ -5,30 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSVP form</title>
-    <link rel="stylesheet" href="style.css/">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+
+  <div class="heading">
   <h1>Wedding Invitation!!!</h1>
   <h3>You're invited to attend the wedding of Mr. and Mrs Dlamini</h3>
+  <h4>Save the dates : 19 & 20 March 2022</H4>
   <h4>Kindly reply by 06  Mar  2022</h4>
-  <form id="invitation-form">
-  <label for="name">Name: <input type="text" name="details" placeholder="Please enter your name" required>
+</div>
+
+<form id="invitation-form">
+
+  <div class="p-details">
+<label for="name">Name: <br><input type="text" name="details" placeholder="Please enter your name" required>
 </label><br>
-<label for="surname">Surname: <input type="text" name="details" placeholder="Please enter your surname" required></label><br>
-<label for="dob">D.O.B: <input type="date" name="details" id="dob"></label><br>
-<label for="tel">Cellphone Number: <input type="tel" name="details" id="tel_number" placeholder="071 234 5678" required></label><br>
-<label for="email">Email: <input type="email" name="details" id="email" placeholder="PLease enter email address"></label><br>
-<p>Please confirm below if you will be attending the event:</p>
+<label for="surname">Surname: <br><input type="text" name="details" placeholder="Please enter your surname" required></label><br>
+<label for="dob">D.O.B: <br><input type="date" name="details" id="dob"></label><br>
+<label for="tel">Cellphone Number: <br><input type="tel" name="details" id="tel_number" placeholder="071 234 5678" required></label><br>
+<label for="email">Email: <br><input type="email" name="details" id="email" placeholder="PLease enter email address"></label><br>
+</div>
+
+<div class="attend">
+  <p>Please confirm below if you will be attending the event:</p>
 <label for="coming"><input type="radio" name="attending" id="coming" checked>I will be attending</label><br>
 <label for="not_coming"><input type="radio" name="attending" id="not_coming">I unfortunately will not be attending</label>
-<p>Please let us know how many seats to reserve: </p>
+</div>
+
+<div class="reserve">
+<p>Please let us know how many seats to reserve (1/2 if you bringing partner): </p>
 <label for="saets"><input type="number" name="seats" id="seats" min="1" max="2"> seat(s). </label><br>
+</div>
+
+<div class="food">
 <p>Please tell us what you would like to have for food:</p>
 <label for="steak"><input type="checkbox" name="food" id="steak">Steak and salad</label><br>
 <label for="kebab"><input type="checkbox" name="food" id="kebab">Kebabs</label><br>
 <label for="salmon"><input type="checkbox" name="food" id="salmon">Salmon and asparagus</label><br>
 <label for="lasagna"><input type="checkbox" name="food" id="lasagna">Lasagna</label><br>
 <label for="lamb"><input type="checkbox" name="food" id="lamb">Lamb and veggies</label><br>
+</div>
+
+<div class="finger-food">
 <p>These will go with our variety of finger foods:</p>
 <p><ul>
     <li>Caprese cups</li>
@@ -36,7 +55,13 @@
     <li>Mini tacos</li>
     <li>Meatballs</li>
 </ul></p><br>
-</form>
+</div>
+<!-- <div class="vid-container">
+  <video class="myvideo" autoplay loop muted>
+    <source src="./assests/Heart - 35640.mp4" type="video/mp4">
+  </video>
+  </div> -->
+</form><br>
 <br><footer>For any queries please contact us on 065 321 8765.</footer>
 
 
