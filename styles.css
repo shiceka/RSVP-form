@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 body {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     background-image: url(./assests/wedding-g54fad0d9a_1920.jpg);
     background-size: cover;
 }
