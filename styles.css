@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Lobster&family=Redressed&display=swap');
 body {
     background-image: url(./assests/wedding-g54fad0d9a_1920.jpg);
     background-size: cover;
@@ -21,7 +23,7 @@ body {
     z-index: -1;
 } */
 #invitation-form {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 60px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     color: darkcyan;
     padding: 20px;
@@ -30,6 +32,7 @@ body {
     backdrop-filter: blur(10px);
     background-image: url(./assests/flower-g838cace99_1920.png);
     background-size: cover;
+    font-family: barriecito;
 }
 .heading {
     color: cadetblue;
@@ -41,5 +44,46 @@ ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
+    font-size: 120%;
+    text-align: left;
+    margin-left: 43%;
+    color: black;
 }
-
+.attend {
+    text-align: left;
+    margin-left: 40%;
+    color: black;
+}
+.food {
+    text-align: left;
+    margin-left: 40%;
+    color: black;
+}
+.reserve {
+    text-align: left;
+    margin-left: 40%;
+    color: black;
+}
+h1 {
+    font-size: 350%;
+}
+h2 {
+    font-size: 200%;
+}
+h3 {
+    font-size: 150%;
+}
+label {
+    font-size: 120%;
+}
+p {
+    font-size: 120%;
+    color: black;
+}
+.p-details {
+    margin-left: -5%;
+    color: black;
+}
+footer {
+    font-family: lobster;
+}
