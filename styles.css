@@ -46,7 +46,7 @@ ul {
     padding: 0%;
     font-size: 120%;
     text-align: left;
-    margin-left: 43%;
+    margin-left: 4%;
     color: black;
 }
 .attend {
@@ -56,7 +56,7 @@ ul {
 }
 .food {
     text-align: left;
-    margin-left: 40%;
+    margin-left: 4%;
     color: black;
 }
 .reserve {
@@ -86,4 +86,12 @@ p {
 }
 footer {
     font-family: lobster;
+}
+
+#image{
+    position:absolute;
+    top: 0;
+    height: 50vh;
+
+
 }

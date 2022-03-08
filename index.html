@@ -19,9 +19,9 @@
 <form id="invitation-form">
 
   <div class="p-details">
-<label for="name">Name: <br><input type="text" name="details" placeholder="Please enter your name" required>
+<label for="name">Name: <br><input id = "name" type="text" name="details" placeholder="Please enter your name" required>
 </label><br>
-<label for="surname">Surname: <br><input type="text" name="details" placeholder="Please enter your surname" required></label><br>
+<label for="surname">Surname: <br><input type="text" id="surname" name="details" placeholder="Please enter your surname" required></label><br>
 <label for="dob">D.O.B: <br><input type="date" name="details" id="dob"></label><br>
 <label for="tel">Cellphone Number: <br><input type="tel" name="details" id="tel_number" placeholder="071 234 5678" required></label><br>
 <label for="email">Email: <br><input type="email" name="details" id="email" placeholder="PLease enter email address"></label><br>
@@ -29,22 +29,23 @@
 
 <p>Please confirm below if you will be attending the event:</p>
 <div class="attend">  
-<label for="coming"><input type="radio" name="attending" id="coming" checked>I will be attending</label><br>
-<label for="not_coming"><input type="radio" name="attending" id="not_coming">I unfortunately will not be attending</label>
+<label for="coming"><input type="radio" name="attending" onclick="show()" id="coming" >I will be attending</label><br>
+<label for="not_coming"><input type="radio" name="attending" onclick="hide()" id="not_coming">I unfortunately will not be attending</label>
 </div>
 
-<p>Please let us know how many seats to reserve (1/2 if you bringing partner): </p>
-<div class="reserve">
+
+<div style="display:none" class="reserve">
+  <p>Please let us know how many seats to reserve (1/2 if you bringing partner): </p>
 <label for="saets"><input type="number" name="seats" id="seats" min="1" max="2"> seat(s). </label><br>
-</div>
+
 
 <p>Please tell us what you would like to have for food:</p>
 <div class="food">
-<label for="steak"><input type="checkbox" name="food" id="steak">Steak and salad</label><br>
-<label for="kebab"><input type="checkbox" name="food" id="kebab">Kebabs</label><br>
-<label for="salmon"><input type="checkbox" name="food" id="salmon">Salmon and asparagus</label><br>
-<label for="lasagna"><input type="checkbox" name="food" id="lasagna">Lasagna</label><br>
-<label for="lamb"><input type="checkbox" name="food" id="lamb">Lamb and veggies</label><br>
+<label for="steak"><input type="checkbox" name="food" id="steak" onclick="">Steak and salad</label><br>
+<label for="kebab"><input type="checkbox" name="food" id="kebab" onclick="">Kebabs</label><br>
+<label for="salmon"><input type="checkbox" name="food" id="salmon" onclick="">Salmon and asparagus</label><br>
+<label for="lasagna"><input type="checkbox" name="food" id="lasagna" onclick="">Lasagna</label><br>
+<label for="lamb"><input type="checkbox" name="food" id="lamb" onclick="">Lamb and veggies</label><br>
 </div>
 
 <div class="finger-food">
@@ -56,14 +57,21 @@
     <li>Meatballs</li>
 </ul></p><br>
 </div>
+</div>
 <!-- <div class="vid-container">
   <video class="myvideo" autoplay loop muted>
     <source src="./assests/Heart - 35640.mp4" type="video/mp4">
   </video>
   </div> -->
+  <button type="submit" onclick="mySubmit(event)">Submit</button>
 </form><br>
 <br><footer>For any queries please contact us on 065 321 8765. See you there...19 & 20 March 2022</footer>
+<div id="display">
 
+</div>
 
+<div id = "error"></div>
+<div id = "output"></div>
+<script src="./funtion.js"></script>
 </body>
 </html>
