@@ -3,9 +3,10 @@ let name = document.getElementById("name");
 let surname = document.getElementById("surname");
 let DoB = document.getElementById("dob");
 let cellphone = document.getElementById("tel_number");
-let email = document.getElementById("email")
+let email = document.getElementById("email");
 let food = document.getElementsByClassName("food");
-let partner = document.getElementsByClassName("reserve")
+let partner = document.getElementsByClassName("reserve");
+var checkedValues = [];
 
 function mySubmit(event) {
     event.preventDefault();
@@ -15,10 +16,11 @@ function mySubmit(event) {
     let DoB = document.getElementById("dob").value;
     let cellphone = document.getElementById("tel_number").value;
     let email = document.getElementById("email").value;
-    let food = document.getElementsByClassName("food").value;
+    // let food = document.getElementsByClassName("food").value;
     let partner = document.getElementsByClassName("reserve").value;
+    let food = test(event); 
 
-    if(name === "" || surname === "" || DoB === "" || cellphone === "" || email === ""){
+    if(name === "" || surname === "" || DoB === "" || cellphone === "" || email === "" || food === "" || partner === ""){
         document.getElementById("error").innerHTML=`
         <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Alert-Stop-Warning-Error_icon.svg/1024px-Alert-Stop-Warning-Error_icon.svg.png" >
         <h2 style="color:red;">Fill all the fields</h2>
@@ -64,8 +66,16 @@ var noDisplay = document.querySelector(".reserve");
     }
 }
 
-function checkBoxes() {
-    if
+function checkBoxes(event) {
+    var value = event.target.value
+    var index = checkedValues.indexOf(value)
+    if(event.target.checked === false && index > -1){
+        checkedValues.splice(index, 1);
+    }
+    else {
+        checkedValues.push(value)
+        return checkedValues;
+    }
 }
 
 
